@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Envelope + Letter (Open/Close on Click)</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>Лулимга</strong>
+                        <p>
+                            Моя дорогая принцесса, я тебя безмерно люблю. Ты для меня — всё. Пусть я иногда ошибался, обижал тебя, давал поводы для ревности и делал то, что тебе не нравилось, но я не могу представить свою жизнь без тебя. Ты изменила её, сделала ярче и лучше, чем она когда-либо была. Я счастлив, что судьба свела нас вместе. Мне с тобой невероятно повезло. Я обожаю твой характер, как ты смотришь на меня, твой нежный запах и твои глубокие глаза. Я хочу быть с тобой каждую минуту, каждую секунду, до последнего вздоха. Ты — смысл и радость моей жизни. Словами трудно выразить всё, что я к тебе чувствую. Ты — та, кто понимает меня без слов, кто смеётся над моими шутками, и я не перестаю удивляться, как тебе хватает терпения любить меня таким, какой я есть.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+    </script>
+</body>
+</html>
